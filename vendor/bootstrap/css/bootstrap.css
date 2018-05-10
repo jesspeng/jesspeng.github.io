@@ -397,15 +397,14 @@ h6, .h6 {
 }
 
 .footer {
-    position: absolute;
+    position:relative;
     left: 0;
     bottom: 0;
     width: 100%;
     color: gray;
-    padding-top: 100px;
-    padding-bottom: 20px;
+    margin-top: 10%;
+    margin-bottom: 5%;
     text-align: center;
-    display: block;
 }
 
 hr {
@@ -9017,7 +9016,6 @@ button.bg-dark:focus {
   padding-top: 5%;
   padding-bottom: 20%;
   width: 100%;
-  display: block;
 }
 
 @media (min-width: 576px) {
