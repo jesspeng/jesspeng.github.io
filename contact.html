@@ -13,10 +13,12 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
     <script type='text/javascript' src='vendor/bootstrap/js/modernizr.js'></script>
     <script type='text/javascript' src='vendor/bootstrap/js/dynamicpage.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
 
     <!-- Custom styles for this template -->
     <style>
@@ -42,19 +44,19 @@
         <div class="col-lg-12">
 
           <!-- Header -->
-        <div class="row">
-          <div class="column">
-            <div class ="logo">
-              <img src ="meglogo.png" alt="The Law Offices of Margaret F. Sauser" width ="350" height ="auto">
+          <div class="row">
+            <div class="column">
+              <div class ="logo">
+                <img src ="meglogo.png" alt="The Law Offices of Margaret F. Sauser" width ="350" height ="auto">
+              </div>
             </div>
-          </div>
 
-          <div class="column">
-            <div class="header_right">
-              <p>meg@megsauserlaw.com<br>+847.291.6958</p>
+            <div class="column">
+              <div class="header_right">
+                <p>meg@megsauserlaw.com<br>+847.291.6958</p>
+              </div>
             </div>
           </div>
-        </div>
 
 
           <!-- Navigation -->
@@ -71,17 +73,43 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
-
           </div>
 
           <!-- Page Content -->
 
           <div class="content">
-            <img src="meg2.jpg" height="310px" width="auto" alt="Image" style="float:left; margin: 0px 40px 40px 0px;">
-            <p class="lead"><b>Margaret F. Sauser</b> is a skilled counselor, litigator, trial and transactional attorney who has practiced law for twenty years. Upon graduation, Ms. Sauser joined the Cook County State's Attorney's Office where she became a First Chair Criminal Prosecutor trying hundreds of felony and misdemeanor cases. After her success in the criminal division, Ms. Sauser moved to the civil division where she actively defended the County in various tort, medical malpractice, and federal complex litigation matters. Ms. Sauser helped create new law under the Tort Immunity Act and worked on a number of high profile hate-crime, construction-design and guardianship cases. Ms. Sauser judged trial advocacy classes at the Chicago Kent College of Law and she was a member of the Cook County State's Attorney's Office Speaker's Bureau.<br><br>
-            In 1994, Ms. Sauser joined Clausen Miller. As a senior litigator, Ms. Sauser successfully developed case plans and litigated medical malpractice, insurance coverage, and products liability cases. Ms. Sauser also helped train junior litigation associates.<br><br>
-            Ms. Sauser founded her own practice in 1997 working predominately in real estate law. Ms. Sauser has represented buyers, sellers, landlords and tenants in various real estate transactions. She has obtained judgments in forcible entry and detainer actions, litigated the Illinois Real Estate Property and Disclosure Act, and succeeded in two condemnation suits. She has provided counsel and performed work for condominium associations, medical professionals, designers and other small business owners.
+            <p class="lead">
             </p>
+
+
+          <div style="text-align:center">
+            <h3>Contact</h3>
+          </div>
+          <br>
+
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="column">
+                <div id="map" style="width:90%; height: 500px"></div>
+
+
+
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+          </div>
+        </div>
+
+
           </div>
 
           <div class="footer">
@@ -95,9 +123,17 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamVzc3BlbmciLCJhIjoiY2pmaXpsNWdiMGhwbzJ3bzNkMmFibW9mOSJ9.248VlogdbHUhGR4olA6JyQ';
+    var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+        center: [-87.832223, 42.146438], // starting position [lng, lat]
+        zoom: 12 // starting zoom
+    });
+    </script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   </body>
 
 </html>
