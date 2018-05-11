@@ -39,13 +39,14 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+
 
           <!-- Header -->
-        <div class="row">
+
+          <div class="header">
           <div class="column">
             <div class ="logo">
-              <img src ="meglogo.png" alt="The Law Offices of Margaret F. Sauser" width ="350" height ="auto">
+              <img src ="megsauserlogo.png" alt="The Law Offices of Margaret F. Sauser" width ="350" height ="auto">
             </div>
           </div>
 
@@ -58,21 +59,33 @@
 
 
           <!-- Navigation -->
-
+        <div class="col-lg-12">
           <div class="text-center">
-            <hr>
-            <nav class="circle" style="font-size:17px">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="pastwork.html">Past Work</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="results.html">Results</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-
-          </div>
+          <div class="stroke" style ="padding-bottom: 30px">
+          <label for="show-menu" class="show-menu">Menu</label>
+             <input type="checkbox" id="show-menu" role="button">
+                 <ul id="menu">
+                 <li><a href="#">Home</a></li>
+                 <li>
+                     <a href="about.html">About</a>
+                     <ul class="hidden">
+                         <li><a href="#">Who We Are</a></li>
+                         <li><a href="#">What We Do</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="#">Past Work</a>
+                     <ul class="hidden">
+                         <li><a href="#">1</a></li>
+                         <li><a href="#">2</a></li>
+                         <li><a href="#">3</a></li>
+                     </ul>
+                 </li>
+                 <li><a href="#">Testimonials</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+             </ul>
+           </div>
+         </div>
 
           <!-- Page Content -->
 
