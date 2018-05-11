@@ -462,6 +462,13 @@ ul li a:before {
     display: none;
 }
 
+.show-menu:hover {
+    background: #0D295B;
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+
 #menu {
   background: #8995A5;
   width: 100%;
@@ -1676,13 +1683,14 @@ input[type=submit]:hover {
 
     .logo {
       margin-right: auto;
-      margin-left: auto;
+      margin-left: 30px;
     }
 
     .header_right {
       text-align: center;
       float: none;
       width: 100%;
+      margin-right: 100px; 
     }
 
     .content {
@@ -9065,7 +9073,6 @@ button.bg-dark:focus {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-
 }
 
 .contact {
