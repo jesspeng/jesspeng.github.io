@@ -61,7 +61,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.5rem;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -397,12 +397,11 @@ li {
 /*Style for menu links*/
 li a {
     display:block;
-    min-width:205px;
+    min-width:204px;
     height: 30px;
     text-align: center;
     line-height: 30px;
     font-family: "Helvetica", Arial, sans-serif;
-    letter-spacing: 1px;
     color: #fff;
     text-decoration: none;
 }
@@ -456,7 +455,6 @@ ul li a:before {
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
     font-family: "Helvetica", Arial, sans-serif;
-    letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
     background: #8995A5;
@@ -516,7 +514,6 @@ input[type=checkbox]:checked ~ #menu{
     margin-top: 10%;
     margin-bottom: 5%;
     text-align: center;
-    letter-spacing: 1px; 
 }
 
 hr {
