@@ -460,6 +460,7 @@ ul li a:before {
     background: #8995A5;
     text-align: center;
     padding: 8px 0;
+    margin-bottom: 0px; 
     display: none;
 }
 
