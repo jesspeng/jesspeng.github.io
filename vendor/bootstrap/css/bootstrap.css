@@ -402,6 +402,7 @@ li a {
     text-align: center;
     line-height: 30px;
     font-family: "Helvetica", Arial, sans-serif;
+    letter-spacing: 1px;
     color: #fff;
     text-decoration: none;
 }
@@ -455,12 +456,13 @@ ul li a:before {
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
     font-family: "Helvetica", Arial, sans-serif;
+    letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
     background: #8995A5;
     text-align: center;
     padding: 8px 0;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     display: none;
 }
 
@@ -514,6 +516,7 @@ input[type=checkbox]:checked ~ #menu{
     margin-top: 10%;
     margin-bottom: 5%;
     text-align: center;
+    letter-spacing: 1px; 
 }
 
 hr {
