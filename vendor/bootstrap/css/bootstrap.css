@@ -377,9 +377,16 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+.text-block {
+  width: 100%;
+}
+
+.image {
+}
+
 .lead {
-  font-size: 11px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 ul {
@@ -511,7 +518,7 @@ input[type=checkbox]:checked ~ #menu{
     bottom: 0;
     width: 100%;
     color: gray;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
 }
@@ -1665,6 +1672,21 @@ input[type=submit]:hover {
     padding: 0px;
 }
 
+.column_left {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+  padding: 0px;
+}
+
+.column_right {
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+  padding: 0px;
+  margin-bottom: 5%;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -1674,7 +1696,7 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    .column, input[type=submit] {
+    .column, .column_left, .column_right, input[type=submit] {
         width: 100%;
         margin: 0 auto;
     }
@@ -9089,8 +9111,6 @@ button.bg-dark:focus {
 }
 
 .content {
-  padding-top: 0%;
-  padding-bottom: 20%;
   width: 100%;
 }
 
