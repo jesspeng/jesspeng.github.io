@@ -514,12 +514,14 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .footer {
+    background: #8995A5;
     position:relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: gray;
-    margin-bottom: 5%;
+    color: white;
+    height: 40px;
+    padding-top: 10px;
     text-align: center;
 }
 
