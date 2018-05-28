@@ -404,7 +404,7 @@ li {
 /*Style for menu links*/
 li a {
     display:block;
-    min-width:204px;
+    min-width:204.5px;
     height: 30px;
     text-align: center;
     line-height: 30px;
@@ -412,6 +412,7 @@ li a {
     color: #fff;
     text-decoration: none;
 }
+
 /*Hover state for top level links*/
 li:hover a {
     background: #0D295B;
@@ -425,7 +426,7 @@ li:hover ul a {
     height: 30px;
     line-height: 30px;
     text-decoration: none;
-    min-width:205px;
+    min-width:204.5px;
 }
 /*Hover state for dropdown links*/
 li:hover ul a:hover {
@@ -518,7 +519,6 @@ input[type=checkbox]:checked ~ #menu{
     bottom: 0;
     width: 100%;
     color: gray;
-    margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
 }
@@ -1684,7 +1684,6 @@ input[type=submit]:hover {
   width: 80%;
   margin-top: 6px;
   padding: 0px;
-  margin-bottom: 5%;
 }
 
 /* Clear floats after the columns */
