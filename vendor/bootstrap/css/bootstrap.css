@@ -399,18 +399,19 @@ ul {
 /*Create a horizontal list with spacing*/
 li {
     display:inline-block;
-    margin-right: 0 px;
 }
 /*Style for menu links*/
 li a {
     display:block;
-    min-width:204.5px;
+    min-width:208px;
     height: 30px;
     text-align: center;
     line-height: 30px;
     font-family: "Helvetica", Arial, sans-serif;
     color: #fff;
     text-decoration: none;
+    border-right: 1px solid white;
+
 }
 
 /*Hover state for top level links*/
@@ -419,6 +420,7 @@ li:hover a {
     text-decoration: none;
     color: white;
 }
+
 /*Style for dropdown links*/
 li:hover ul a {
     background: #f3f3f3;
