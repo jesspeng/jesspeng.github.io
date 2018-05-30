@@ -1741,9 +1741,9 @@ input[type=submit]:hover {
   margin: auto;
   width: 0%;
   content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 2px;
+  color: white;
+  background: white;
+  height: 1px;
 }
 .stroke ul li a:hover:after {
   width: 100%;
