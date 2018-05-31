@@ -1744,7 +1744,7 @@ input[type=submit]:hover {
   right: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: '';
   color: white;
   background: white;
   height: 0.8px;
