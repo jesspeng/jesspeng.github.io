@@ -1693,7 +1693,7 @@ input[type=submit]:hover {
   float: left;
   width: 80%;
   margin-top: 6px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
 .column_r {
@@ -2073,7 +2073,7 @@ input[type=submit]:hover {
 }
 
 .tab {
-  display: inline-block;
+  
   margin-left: 5%;
 }
 
