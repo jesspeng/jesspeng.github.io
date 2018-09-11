@@ -1722,8 +1722,11 @@ input[type=submit]:hover {
     }
 
     .logo {
-      margin-right: auto;
-      margin-left: 50px;
+      position: absolute;
+      left: 50%:
+      transform: translate(-50%, -50%); 
+      /*margin-right: auto;
+      margin-left: 50px;*/
     }
 
     .header_right {
@@ -2073,7 +2076,7 @@ input[type=submit]:hover {
 }
 
 .tab {
-  
+
   margin-left: 5%;
 }
 
