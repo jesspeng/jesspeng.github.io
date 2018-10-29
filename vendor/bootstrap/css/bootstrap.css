@@ -31,8 +31,6 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -41,8 +39,32 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'proxima_novathin';
+    src: url('fontsfree-net-proxima-nova-thin-webfont.woff2') format('woff2'),
+         url('fontsfree-net-proxima-nova-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('fontsfree-net-proxima-nova-bold-webfont.woff2') format('woff2'),
+         url('fontsfree-net-proxima-nova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('fontsfree-net-proxima-nova-sbold-webfont.woff2') format('woff2'),
+         url('fontsfree-net-proxima-nova-sbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
-  font-family: "Athelas";
+  font-family: 'proxima_novathin';
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -61,7 +83,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   padding-top: 20px;
-  font-family: "Helvetica";
+  font-family: 'proxima_novathin';
   font-size: 11px;
   font-weight: 400;
   line-height: 1.5;
@@ -408,7 +430,8 @@ li a {
     height: 30px;
     text-align: center;
     line-height: 30px;
-    font-family: "Helvetica", Arial, sans-serif;
+    font-family: "proxima_novathin";
+    font-weight: 800; 
     color: #fff;
     text-decoration: none;
     border-right: 0.5px solid white;
