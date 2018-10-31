@@ -63,6 +63,15 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'proxima_novathin_italic';
+    src: url('fontsfree-net-proxima-nova-thin-it-webfont.woff2') format('woff2'),
+         url('fontsfree-net-proxima-nova-thin-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
   font-family: 'proxima_novathin';
   line-height: 1.15;
@@ -84,7 +93,7 @@ body {
   margin: 0;
   padding-top: 20px;
   font-family: 'proxima_novathin';
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -431,7 +440,7 @@ li a {
     text-align: center;
     line-height: 30px;
     font-family: "proxima_novathin";
-    font-weight: 800; 
+    font-weight: 800;
     color: #fff;
     text-decoration: none;
     border-right: 0.5px solid white;
@@ -498,6 +507,30 @@ ul li a:before {
     display: none;
 }
 
+#motto-banner {
+  background-color: rgba(54,56,65,0.8);
+  font-size: 35px;
+  color: white;
+  z-index: 2000;
+}
+
+#testimonial-banner {
+  background-color: rgba(54,56,65,0.8);
+  font-size: 35px;
+  color: white;
+  z-index:2000;
+}
+
+.p_title {
+  font-size: 30px;
+  color: rgb(15,42,90);
+}
+
+#mission {
+  background-color: rgba(54,56,65,0.8);
+  color: white;
+}
+
 .show-menu:hover {
     background: #0D295B;
     text-decoration: none;
@@ -537,6 +570,28 @@ input[type=checkbox]:checked ~ #menu{
     .show-menu {
         display:block;
     }
+
+    #motto-banner {
+      font-size: 20px;
+      top: -150px;
+    }
+
+    #testimonial-banner {
+      font-size: 20px;
+      margin-top: -100px;
+    }
+
+    #mission {
+      top:-50px;
+    }
+
+    #mission_left {
+      display: none;
+    }
+
+    #main-intro {
+      padding-top: 310px;
+    }
 }
 
 .footer {
@@ -548,6 +603,7 @@ input[type=checkbox]:checked ~ #menu{
     color: white;
     height: 40px;
     padding-top: 10px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
